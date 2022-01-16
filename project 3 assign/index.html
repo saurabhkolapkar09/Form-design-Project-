@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <h2>Tell us about you</h2>
+            <p class="p">please tell a bit about you so that we can personalize your onboarding experience</p>
+            <br>
+            <br>
+            <p class="para">Tou are looking for,</p>
+            <div class="select-btn">
+                <button type="button"    class="btn btn-left"><i class="fa fa-pen-nib"></i>&nbsp; Design</button>
+                <button type="button"    class="btn btn-left"><span class="fa fa-file-text-o"></span>&nbsp; &nbsp;  Projects</button>
+                
+    
+            </div>
+            <p class="para">full name</p>
+            <input type="text" name="" id="" class="in" placeholder="">
+            <br>
+            <p class="para">Location</p>
+            <input type="text" name="" class="in" id="">
+            <br>
+            
+                <!-- <form id="login" class="in" onsubmit="process(event)"> -->
+                    <p class="para">Phone number</p>
+                     <input id="phone"  type="tel" name="phone" class="con" placeholder=" "/>
+                    
+                <!-- </form> -->
+            
+    <br>
+    <br>
+            <div class="submit">
+                <button type="submit" class="submit in">Proceed to next step &#8594</button>
+            </div>
+        </div>
+    
+    
+    </div>
+    <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    </script>
+ <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
